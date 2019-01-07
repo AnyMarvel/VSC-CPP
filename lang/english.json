@@ -1,0 +1,145 @@
+{  
+    "version": 1,  
+    "strings":  
+    [  
+            {"k":"BitwiseOperatorInConditionall","v":"bitwise operator in conditional"},
+            {"k":"BrokenNullCheckRule","v":"broken null check"},
+            {"k":"BrokenNilCheckRule","v":"broken nil check"},
+            {"k":"BrokenOddnessCheckRule","v":"broken oddness check"},
+            {"k":"CollapsibleIfStatementsRule","v":"collapsible if statements"},
+            {"k":"ConstantConditionalOperatorRule","v":"constant conditional operator"},
+            {"k":"DeadCodeRule","v":"dead code"},
+            {"k":"DoubleNegativeRule","v":"double negative"},
+            {"k":"ForLoopShouldBeWhileLoopRule","v":"for loop should be while loop"},
+            {"k":"GotoStatementRule","v":"goto statement"},
+            {"k":"JumbledIncrementerRule","v":"jumbled incrementer"},
+            {"k":"MisplacedNullCheckRule","v":"misplaced null check"},
+            {"k":"MisplacedNilCheckRule","v":"misplaced nil check"},
+            {"k":"MultipleUnaryOperatorRule","v":"multiple unary operator"},
+            {"k":"ReturnFromFinallyBlockRule","v":"return from finally block"},
+            {"k":"ThrowExceptionFromFinallyBlockRule","v":"throw exception from finally block"},
+
+            
+            {"k":"ObjCVerifyIsEqualHashRule","v":"missing hash method"},
+            {"k":"ObjCVerifyIsEqualHashRuleMsg","v":"If you override isEqual you must override hash too"},
+
+            {"k":"ObjCVerifyMustCallSuperRule","v":"missing call to base method"},
+            {"k":"ObjCVerifyMustCallSuperRuleMsg","v":"overridden method [%s] must call super"},
+
+            {"k":"ObjCVerifyProhibitedCallRule","v":"calling prohibited method"},
+
+            {"k":"ObjCVerifyProtectedMethodRule","v":"calling protected method"},
+            
+            {"k":"ObjCVerifySubclassMustImplementRule","v":"missing abstract method implementation"},
+
+
+
+
+            {"k":"AvoidBranchingStatementAsLastInLoopRule","v":"avoid branching statement as last in loop"},
+            {"k":"BaseClassDestructorShouldBeVirtualOrProtectedRule","v": "base class destructor should be virtual or protected"},
+            {"k":"CoveredSwitchStatementsDontNeedDefaultRule","v":"unnecessary default statement in covered switch statement"},
+            {"k":"DefaultLabelNotLastInSwitchStatementRule","v":"ill-placed default label in switch statement"},
+            {"k":"DestructorOfVirtualClassRule","v":"destructor of virtual class"},
+            {"k":"InvertedLogicRule","v":"inverted logic"},
+            {"k":"MissingBreakInSwitchStatementRule","v":"missing break in switch statement"},
+            {"k":"NonCaseLabelInSwitchStatementRule","v":"non case label in switch statement"},
+            {"k":"ObjCAssignIvarOutsideAccessorsRule","v":"ivar assignment outside accessors or init"},
+            {"k":"ParameterReassignmentRule","v":"parameter reassignment"},
+
+            {"k":"PreferEarlyExitRule","v":"prefer early exits and continue"},
+            {"k":"PreferEarlyExitRuleMsg","v":"Use early exit/continue to simplify code and reduce indentation"},
+
+            {"k":"SwitchStatementsShouldHaveDefaultRule","v":"missing default in switch statements"},
+            {"k":"TooFewBranchesInSwitchStatementRule","v":"too few branches in switch statement"},
+
+
+
+
+            {"k":"AvoidDefaultArgumentsOnVirtualMethodsRule","v":"avoid default arguments on virtual methods"},
+            {"k":"AvoidPrivateStaticMembersRule","v":"avoid private static members"},
+
+
+
+
+            {"k":"EmptyCatchStatementRule","v":"empty catch statement"},
+            {"k":"EmptyDoWhileStatementRule","v":"empty do/while statement"},
+            {"k":"EmptyElseBlockRule","v":"empty else block"},
+            {"k":"EmptyFinallyStatementRule","v":"empty finally statement"},
+            {"k":"EmptyForStatementRule","v":"empty for statement"},
+            {"k":"EmptyIfStatementRule","v":"empty if statement"},
+            {"k":"EmptySwitchStatementRule","v":"empty switch statement"},
+            {"k":"EmptyTryStatementRule","v":"empty try statement"},
+            {"k":"EmptyWhileStatementRule","v":"empty while statement"},
+
+
+
+            {"k":"ObjCBoxedExpressionsRule","v":"use boxed expression"},
+            {"k":"ObjCContainerLiteralsRule","v":"use container literal"},
+            {"k":"ObjCContainerLiteralsRule","v":"uuse number literal"},
+            {"k":"ObjCContainerLiteralsRule","v":"use object subscripting"},
+
+
+
+
+            {"k":"LongVariableNameRule","v":"long variable name"},
+            {"k":"LongVariableNameRuleMsg","v":"Length of variable name [%s] is [%s], which is longer than the threshold of [%s]"},
+            {"k":"ShortVariableNameRule","v":"short variable name"},
+            {"k":"ShortVariableNameRuleMsg","v":"Length of variable name [%s] is [%s], which is shorter than the threshold of [%s]"},
+
+
+
+
+            {"k":"RedundantConditionalOperatorRule","v":"redundant conditional operator"},
+            {"k":"RedundantIfStatementRule","v":"redundant if statement"},
+            {"k":"RedundantLocalVariableRule","v":"redundant local variable"},
+            {"k":"RedundantNilCheckRule","v":"redundant local variable"},
+            {"k":"UnnecessaryElseStatementRule","v":"unnecessary else statement"},
+            {"k":"UnnecessaryNullCheckForCXXDeallocRule","v":"unnecessary null check for dealloc"},
+            {"k":"UselessParenthesesRule","v":"useless parentheses"},
+
+
+
+
+            {"k":"CyclomaticComplexityRule","v":"high cyclomatic complexity"},
+            {"k":"CyclomaticComplexityRuleMsg","v":"Cyclomatic Complexity Number [%s] exceeds limit of [%s]"},
+
+            {"k":"LongClassRule","v":"long class"},
+            {"k":"LongClassRuleMsg","v":"[%s] with [%s] lines exceeds limit of [%s]"},
+
+            {"k":"LongLineRule","v":"long line"},
+            {"k":"LongLineRuleMsg","v":"Line with [%s] characters exceeds limit of[%s]"},
+
+            {"k":"LongMethodRule","v":"long method"},
+            {"k":"LongMethodRuleMsg","v":"Method with [%s] lines exceeds limit of [%s]"},
+
+            {"k":"NcssMethodCountRule","v":"high ncss method"},
+            {"k":"NcssMethodCountRuleMsg","v":"Method of [%s] non-commenting source statements exceeds limit of [%s]"},
+
+            {"k":"NestedBlockDepthRule","v":"deep nested block"},
+            {"k":"NestedBlockDepthRuleMsg","v":"Block depth of [%s] exceeds limit of [%s]"},
+
+            {"k":"NPathComplexityRule","v":"high npath complexity"},
+            {"k":"NPathComplexityRuleMsg","v":"NPath Complexity Number [%s] exceeds limit of [%s]"},
+            
+            {"k":"TooManyFieldsRule","v":"too many fields"},
+            {"k":"TooManyFieldsRuleMsgOC","v":"Objective-C interface with [%s] fields exceeds limit of [%s]"},
+            {"k":"TooManyFieldsRuleMsgC","v":"C++ class with [%s] fields exceeds limit of [%s]"},
+
+            {"k":"TooManyMethodsRule","v":"too many methodss"},
+            {"k":"TooManyMethodsRuleMsgOC","v":"Objective-C implementation with [%s] methods exceeds limit of [%s]"},
+            {"k":"TooManyMethodsRuleMsgC","v":"C++ class with [%s] methods exceeds limit of [%s]"},
+
+            {"k":"TooManyParametersRule","v":"too many parameters"},
+            {"k":"TooManyParametersRuleMsg","v":"Method with [%s] parameters exceeds limit of [%s]"},
+
+
+
+            
+            {"k":"UnusedLocalVariableRule","v":"unused local variable"},
+            {"k":"UnusedLocalVariableRuleMsg","v":"The local variable [%s]is unused"},
+
+            {"k":"UnusedMethodParameterRule","v":"unused method parameter"},
+            {"k":"UnusedMethodParameterRuleMsg","v":"The parameter [%s] is unused"}
+           
+    ]  
+}

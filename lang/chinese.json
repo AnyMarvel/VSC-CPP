@@ -1,0 +1,148 @@
+{
+    "version": 1,  
+    "strings":  
+    [  
+         
+        {"k":"BitwiseOperatorInConditionall","v":"对于按位与或者按位或的情况,OClint认为这不便于理解"},
+        {"k":"BrokenNullCheckRule","v":"NULL检查会导致程序crash"},
+        {"k":"BrokenNilCheckRule","v":"nil检查,在某些情况会返回相反的结果"},
+        {"k":"BrokenOddnessCheckRule","v":"X%2==1对负数不起作用,需要使用X&;1 ==1或者X%2!=0来代替"},
+        {"k":"CollapsibleIfStatementsRule","v":"两个连续if语句的条件可以合并为一个的实例"},
+        {"k":"ConstantConditionalOperatorRule","v":"条件永远为true或者永远为false,没有判断价值?"},
+        {"k":"DeadCodeRule","v":"标示位置有永远不会被执行的代码"},
+        {"k":"DoubleNegativeRule","v":"不需要使用双重否定,形如!!1,~~1等,无意义"},
+        {"k":"ForLoopShouldBeWhileLoopRule","v":"此处for循环可使用while循环替代"},
+        {"k":"GotoStatementRule","v":"谨慎使用Goto语句"},
+        {"k":"JumbledIncrementerRule","v":"混乱的增量,多数出现在嵌套for循环中,如果不是因为笔误写错了,那么这种混乱的写法容易造成代码阅读的问题"},
+        {"k":"MisplacedNullCheckRule","v":"Null Check放错位置,在OC中向一个空指针发送消息无影响,但在C或者C++中可能会引起crash,同时可能会造成代码阅读的困惑"},
+        {"k":"MisplacedNilCheckRule","v":"Nil Check放错位置,在OC中向nil指针发送消息不起作用，同时可能会造成代码阅读的困惑"},
+        {"k":"MultipleUnaryOperatorRule","v":"多重一元操作很难被理解。形如:int b = -(+(!(~1)));)"},
+        {"k":"ReturnFromFinallyBlockRule","v":"不推荐在最后一个block中return的做法"},
+        {"k":"ThrowExceptionFromFinallyBlockRule","v":"不要在最后一个block中抛出异常,因为这样的情况可能会掩盖其他异常或者代码缺陷"},
+
+
+
+
+        {"k":"ObjCVerifyIsEqualHashRule","v":"如果重写isEqual,一定也要重写hash"},
+        {"k":"ObjCVerifyIsEqualHashRuleMsg","v":"如果重写isEqual,一定也要重写hash"},
+
+        {"k":"ObjCVerifyMustCallSuperRule","v":"需要增加call super的情况,例如layoutSubviews方法,需要添加[super layoutSubviews]"},
+        {"k":"ObjCVerifyMustCallSuperRuleMsg","v":"重写[%s]方法必须call super"},
+
+        {"k":"ObjCVerifyProhibitedCallRule","v":"当一个方法声明时含有attribute((annotate('oclint:enforce[prohibited call]'))),它的所有调用都是被禁止的"},
+
+        {"k":"ObjCVerifyProtectedMethodRule","v":"当一个方法声明含有attribute((annotate('oclint:enforce[protected method]')))时,只有它和它的子类可以调用,因为OC中没有Protected,可以用这种方式达到Protected效果"},
+
+        {"k":"ObjCVerifySubclassMustImplementRule","v":"子类必须实现,至少是一个抽象方法"},
+
+
+
+        
+        {"k":"AvoidBranchingStatementAsLastInLoopRule","v":"不要在for循环或者其他循环语句的末尾使用break"},
+        {"k":"BaseClassDestructorShouldBeVirtualOrProtectedRule","v":"基类的析构函数应该是公共的虚函数或者保护性的非虚函数"},
+        {"k":"CoveredSwitchStatementsDontNeedDefaultRule","v":"已经覆盖了所有的switch分支,不需要写default break部分"},
+        {"k":"DefaultLabelNotLastInSwitchStatementRule","v":":DeFault没有放在Switch的最后一行"},
+        {"k":"DestructorOfVirtualClassRule","v":"虚类的析构函数必须也是虚函数"},
+        {"k":"InvertedLogicRule","v":"反转逻辑让人难以理解。一般是指用(!a)而非(a)来判断让人难以理解"},
+        {"k":"MissingBreakInSwitchStatementRule","v":"在Switch中如果缺少break很容易产生bug"},
+        {"k":"NonCaseLabelInSwitchStatementRule","v":"不要把label放到switch中"},
+        {"k":"ObjCAssignIvarOutsideAccessorsRule","v":"成员的初始化不在getter/setter或者init中,而在其他位置"},
+        {"k":"ParameterReassignmentRule","v":"参数赋值问题,"},
+
+        {"k":"PreferEarlyExitRule","v":"提前使用exists/continue来简化代码并减少缩进"},
+        {"k":"PreferEarlyExitRuleMsg","v":"提前使用exists/continue来简化代码并减少缩进"},
+
+        {"k":"SwitchStatementsShouldHaveDefaultRule","v":"在switch语句中缺少默认值(如果不是每一个分支都有一条路径,那么switch必须含有default)"},
+        {"k":"TooFewBranchesInSwitchStatementRule","v":"Switch中分支过少,可以用if代替"},
+
+
+
+        {"k":"AvoidDefaultArgumentsOnVirtualMethodsRule","v":"避免给虚函数设置默认参数"},
+        {"k":"AvoidPrivateStaticMembersRule","v":"避免使用私有静态成员,静态成员很容易破换封装性"},
+
+
+
+        {"k":"EmptyCatchStatementRule","v":"catch中代码为空"},
+        {"k":"EmptyDoWhileStatementRule","v":"do-while循环中代码为空"},
+        {"k":"EmptyElseBlockRule","v":"else中代码为空"},
+        {"k":"EmptyFinallyStatementRule","v":"finally中代码为空"},
+        {"k":"EmptyForStatementRule","v":"for循环为空"},
+        {"k":"EmptyIfStatementRule","v":"if语句为空"},
+        {"k":"EmptySwitchStatementRule","v":"Switch中代码为空"},
+        {"k":"EmptyTryStatementRule","v":"try中代码为空"},
+        {"k":"EmptyWhileStatementRule","v":"While循环中代码为空"},
+
+
+
+
+        {"k":"ObjCBoxedExpressionsRule","v":"可使用umberWithInt与stringWithUTF8String:getenv实现简写"},
+        {"k":"ObjCContainerLiteralsRule","v":"可使用arrayWithObjects和dictionaryWithObjects实现简写"},
+        {"k":"ObjCContainerLiteralsRule","v":"可使用numberWithInt和numberWithBOOL实现简写"},
+        {"k":"ObjCContainerLiteralsRule","v":"可使用objectAtIndex和objectForKey实现简写"},
+
+
+
+
+     	{"k": "LongVariableNameRule", "v": "命名过长"} ,
+     	{"k": "LongVariableNameRuleMsg", "v": "变量名[%s]的长度为[%s]，超过阈值[%s]"} ,
+        {"k":"ShortVariableNameRule", "v":"命名过短"},
+        {"k":"ShortVariableNameRuleMsg","v":"变量名[%s]的长度是 [%s],超过阈值[%s]"},
+
+
+
+        {"k":"RedundantConditionalOperatorRule","v":"r冗余的条件运算符"},
+        {"k":"RedundantIfStatementRule","v":"冗余的if判断"},
+        {"k":"RedundantLocalVariableRule","v":"冗余局部变(return中的参数可以使用表达式来表示)"},
+        {"k":"RedundantNilCheckRule","v":"冗余的nil check(在OC中向空对象发送消息会返回false)"},
+        {"k":"UnnecessaryElseStatementRule","v":"冗余的else语句(如果if中已经带有return,则不需要写else语句)"},
+        {"k":"UnnecessaryNullCheckForCXXDeallocRule","v":"冗余的null check(在dealloc中不需要判空,就能Delete元素"},
+        {"k":"UselessParenthesesRule","v":"冗余的括号‘()’"},
+
+
+
+        {"k":"CyclomaticComplexityRule","v":"圈复杂度过高"},
+        {"k":"CyclomaticComplexityRuleMsg","v":"圈复杂度是[%s],超过阈值[%s]"},
+
+        {"k":"LongClassRule","v":"类行数太多"},
+        {"k":"LongClassRuleMsg","v":"[%s]中[%s]行超过[%s]的限制"},
+
+        {"k":"LongLineRule","v":"行数过长"},
+        {"k":"LongLineRuleMsg","v":"[%s]个字符的行超过[%s]的限制"},
+
+        {"k":"LongMethodRule","v":"方法过长"},
+        {"k":"LongMethodRuleMsg","v":"Method行数[%s],超过阈值[%s]"},
+ 
+        {"k":"NcssMethodCountRule","v":"过多的ncss语句(非注释源语句)"},
+        {"k":"NcssMethodCountRuleMsg","v":"[%s]个非注释源语句的方法超过阈值[%s]的限制"},
+
+
+        {"k":"NestedBlockDepthRule","v":"层次太深,多层嵌套"},
+        {"k":"NestedBlockDepthRuleMsg","v":"深度为[%s]超过阈值[%s]的限制"},
+
+        {"k":"NPathComplexityRule","v":"NPath复杂度过高(NPath复杂度是一个方法中各种可能的执行路径总和)"},
+        {"k":"NPathComplexityRuleMsg","v":"NPath复杂度[%s]超过阈值[%s]的限制"},
+
+        {"k":"TooManyFieldsRule","v":"域过多"},
+        {"k":"TooManyFieldsRuleMsgOC","v":"Objective-C接口具有[%s]域,超过阈值[%s]的限制"},
+        {"k":"TooManyFieldsRuleMsgC","v":"C++具有[%s]域,超过阈值[%s]的限制"},
+
+        {"k":"TooManyMethodsRule","v":"方法过多"},
+        {"k":"TooManyMethodsRuleMsgOC","v":"Objective-C实现[%s]个方法，超过阈值[%s]"},
+        {"k":"TooManyMethodsRuleMsgC","v":"C++类实现[%s]个方法，超过阈值[%s]"},
+
+        {"k":"TooManyParametersRule","v":"方法中参数过多"},
+        {"k":"TooManyParametersRuleMsg","v":"方法中有[%s]个参数，超过阈值[%s]"},
+
+
+
+        {"k":"UnusedLocalVariableRule","v":"未使用的局部变量"},
+        {"k":"UnusedLocalVariableRuleMsg","v":"变量[%s]未被使用"},
+        
+        {"k":"UnusedMethodParameterRule","v":"未使用的方法参数"},
+        {"k":"UnusedMethodParameterRuleMsg","v":"方法参数[%s]未被使用"}
+       
+    
+
+
+	]
+}
