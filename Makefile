@@ -1,6 +1,6 @@
 #### PROJECT SETTINGS ####
 # The name of the executable to be created
-BIN_NAME := hello
+BIN_NAME := a.out
 # Compiler used
 CXX ?= g++
 # Extension of source files used in the project
@@ -16,7 +16,7 @@ RCOMPILE_FLAGS = -D NDEBUG
 # Additional debug-specific flags
 DCOMPILE_FLAGS = -D DEBUG
 # Add additional include paths
-INCLUDES = -I $(SRC_PATH) $(SRC_PATH)/json
+INCLUDES = -I $(SRC_PATH) -I $(SRC_PATH)/json
 # General linker settings
 LINK_FLAGS =
 # Additional release-specific linker settings
